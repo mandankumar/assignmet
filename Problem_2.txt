@@ -1,0 +1,24 @@
+package interview2;
+import java.util.Scanner;                                        //(including scanner class to take input from user)
+public class Assignment2 {
+
+	public static void main(String[] args) {
+		int arr[],prod=1,n;
+	     Scanner input = new Scanner(System.in);
+	     System.out.println("enter the number of array elements");
+	     n=input.nextInt();                                        //takin length of array from the user
+	     arr=new int[n];                                           //initializing the array
+	     System.out.println("Enter the array elements:");
+	     for(int i=1;i<=n;i++)
+	     {
+	         arr[i] = input.nextInt();                               //creating the array
+	     }
+	     System.out.println("CALCULATING PRODUCT::::::");
+	      for(int i=1;i<=n;i++)
+	      {
+	          prod=prod*arr[i];                                      
+	      }
+	      System.out.println("Here my RESULT is:"+prod);             //printing the output
+	}
+
+}
